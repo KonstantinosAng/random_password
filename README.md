@@ -24,4 +24,4 @@ print('Generated password ---> {}'.format(password))
 
 ```
 
-Run (example.py)[example.py] to see the above example.
+Run [example.py](example.py) to see the above example.
