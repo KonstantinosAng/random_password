@@ -1,12 +1,12 @@
 # Random password generator
 
-Generate a random password with a given length. The algorith stores the password in a mongo
+Generate a random password with a given length. The algorithm stores the password in a mongodb
 database and checks everytime if the generated passwords are uniques.
 
 ## Installation
 
 ```
-	pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -23,4 +23,3 @@ while True:
 print('Generated password ---> {}'.format(password))
 
 ```
-
