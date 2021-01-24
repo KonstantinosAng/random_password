@@ -23,3 +23,5 @@ while True:
 print('Generated password ---> {}'.format(password))
 
 ```
+
+Run example.py to see the above example.
