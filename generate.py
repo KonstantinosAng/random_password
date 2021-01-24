@@ -33,14 +33,13 @@ def pass_gen(length):
   if not length.isdigit(): return 'invalid length input'
   return ''.join(_ for _ in random.sample(''.join(c for c in (lower + upper + numbers + punctuation)), int(length)))
 
-
 if __name__ == "__main__":
-  x = ''
+  """ Main loop """
   a = Mongo()
   length = input('Password length: ')
   while True:
-    x = pass_gen(length)
-    if a.search(x):
-      a.store(x)
+    password = pass_gen(length)
+    if a.search(password):
+      a.store(password)
       break
-  print('Generated password ---> {}'.format(x))
+  print('Generated password ---> {}'.format(password))
